@@ -31,6 +31,10 @@
 @include('layouts.partials.nav')
 <!-- add -->
 @include('layouts.partials.hero')
+@include('layouts.partials.about-us')
+@include('layouts.partials.footer')
+
+
 @yield('content')
 
 
