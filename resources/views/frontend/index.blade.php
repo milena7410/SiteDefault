@@ -1,1 +1,7 @@
-<h1>Olá Mundo</h1>
+@extends('layouts.master')
+
+@section('title', 'Inicio')
+
+@section('content')
+
+@endsection
