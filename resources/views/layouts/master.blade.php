@@ -29,6 +29,8 @@
 
 @include('layouts.partials.header')
 @include('layouts.partials.nav')
+<!-- add -->
+@include('layouts.partials.hero')
 @yield('content')
 
 

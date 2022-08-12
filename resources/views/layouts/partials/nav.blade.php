@@ -3,8 +3,9 @@
         <!-- Uncomment the line below if you also wish to use an image logo -->
 
 
-        <img src="/var/www/html/SiteDefault/public/backend/logo-digitar.png" width="150" height="150"/>
-        <!-- <h1>Default<span>.</span></h1> -->
+         <!-- <img src="/var/www/html/SiteDefault/public/backend/logo_digitar.png"> -->
+
+        <h1>Digit@r<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
@@ -31,7 +32,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
         </ul>
       </nav>
       <!-- .navbar -->
