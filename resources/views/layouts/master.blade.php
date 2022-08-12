@@ -32,9 +32,20 @@
 <!-- add -->
 @include('layouts.partials.hero')
 @include('layouts.partials.about-us')
+@include('layouts.partials.clients')
+@include('layouts.partials.vacinometro')
+@include('layouts.partials.video')
+@include('layouts.partials.modulos')
+@include('layouts.partials.eventos')
+@include('layouts.partials.redes-sociais')
+@include('layouts.partials.perguntas')
+@include('layouts.partials.noticias')
+@include('layouts.partials.contato')
+
+
+
+
 @include('layouts.partials.footer')
-
-
 @yield('content')
 
 
