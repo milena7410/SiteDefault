@@ -19,8 +19,12 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #008374;
-  --color-secondary: #f85a40;
+  /* --color-primary: #008374; */
+  /* --color-secondary: #f85a40; */
+
+  /* milena */
+  --color-primary: #1d1765;
+  --color-secondary: #00bceb;
 }
 
 /* Smooth scroll behavior */
@@ -248,7 +252,8 @@ section {
 # Header
 --------------------------------------------------------------*/
 .topbar {
-  background: #00796b;
+  /* background: #00796b; */
+  background: #1d1765;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -328,7 +333,7 @@ section {
 }
 
 .header .logo h1 span {
-  color: #f96f59;
+  color: #00bceb;
 }
 
 .sticked-header-offset {
@@ -2008,7 +2013,7 @@ section {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #008d7d;
+  background: var(--color-secondary);
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;

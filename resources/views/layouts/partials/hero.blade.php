@@ -14,8 +14,8 @@
         </div>
 
         <!-- box -->
-        <div class="col-lg-6 order-1 order-lg-2">
-          <img src="   " class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+        <div class="col-lg-6 order-1 order-lg-2" style="text-align: center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg" class="img-fluid" alt="logo-prefeitura" data-aos="zoom-out" data-aos-delay="100">
         </div>
       </div>
     </div>
