@@ -26,7 +26,12 @@
 
               <div class="portfolio-wrap">
                 <div class="portfolio-info">
+<<<<<<< HEAD
                 <img src="{{ asset ('frontend/assets/img/new-img/lupa.gif') }}" style="width:50px; position: absolute;
+=======
+                <img src="{{ asset('frontend/assets/img/new-img/lupa.gif') }}" 
+                style="width:50px; position: absolute;
+>>>>>>> a2994bc52aef4c73c0de28235a8ffb2329594bc4
 	                left: 270px">
                   <h4><a>Portal Transparencia</a></h4>
                   <p>Clique para acessar</p>
@@ -48,21 +53,21 @@
             </div>
             <!-- End Portfolio Item -->
 
-            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
+            <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
               <div class="portfolio-info">
-                <img src="<a target="_blank" href="https://icons8.com/icon/ZiRwjHmdrgtj/informações">Informações</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>" style="width:50px; position: absolute;
+                <img src="{{ asset('frontend/assets/img/new-img/lupa.gif') }}" style="width:50px; position: absolute;
 	                left: 270px">
-                  <h4><a>E-Sic</a></h4>
+                  <h4><a>Processos Licitatórios</a></h4>
                   <p>Clique para acessar</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>><!-- End Portfolio Item -->
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
               <div class="portfolio-info">
-                <img src="/var/www/html/SiteDefault/public/frontend/assets/img/new-img/lupa.gif" style="width:50px; position: absolute;
+                <img src="{{ asset('frontend/assets/img/new-img/lupa.gif') }}" style="width:50px; position: absolute;
 	                left: 270px">
                   <h4><a>Processos Licitatórios</a></h4>
                   <p>Clique para acessar</p>
@@ -73,7 +78,7 @@
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
               <div class="portfolio-info">
-                <img src="/var/www/html/SiteDefault/public/frontend/assets/img/new-img/lupa.gif" style="width:50px; position: absolute;
+                <img src="{{ asset('frontend/assets/img/new-img/lupa.gif')  }}" style="width:50px; position: absolute;
 	                left: 270px">
                   <h4><a>Contas Públicas</a></h4>
                   <p>Clique para acessar</p>
@@ -84,7 +89,7 @@
             <div class="col-xl-4 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
               <div class="portfolio-info">
-                <img src="{{ asset('frontend//assets/img/new-img/lupa.gif') }}" style="width:50px; position: absolute;
+                <img src="{{ asset('frontend/assets/img/new-img/lupa.gif') }}" style="width:50px; position: absolute;
 	                left: 270px">
                   <h4><a>Holerite On-Line</a></h4>
                   <p>Clique para acessar</p>
@@ -103,6 +108,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
+<<<<<<< HEAD
             <!-- <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
                 <a href="{{ asset('frontend/assets/img/portfolio/books-2.jpg')  }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('frontend/assets/img/portfolio/books-2.jpg') }}" class="img-fluid" alt=""></a>
@@ -134,28 +140,37 @@
             </div><!End Portfolio Item -->
 
             <!-- <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
+=======
+            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
+>>>>>>> a2994bc52aef4c73c0de28235a8ffb2329594bc4
               <div class="portfolio-wrap">
-                <a href="{{ asset('frontend/assets/img/portfolio/branding-3.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('frontend/assets/img/portfolio/branding-3.jpg') }}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <div class="portfolio-info">
+                <img src="{{ asset('frontend/assets/img/new-img/lupa.gif') }}" style="width:50px; position: absolute;
+	                left: 270px">
+                  <h4><a>Vagas de Emprego</a></h4>
+                  <p>Clique para acessar</p>
                 </div>
               </div>
             </div><!- End Portfolio Item -->
 
+<<<<<<< HEAD
             <!-- <div class="col-xl-4 col-md-6 portfolio-item filter-books">
+=======
+            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
+>>>>>>> a2994bc52aef4c73c0de28235a8ffb2329594bc4
               <div class="portfolio-wrap">
-                <a href="{{ asset('frontend/assets/img/portfolio/books-3.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('frontend/assets/img/portfolio/books-3.jpg') }}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <div class="portfolio-info">
+                <img src="{{ asset('frontend/assets/img/new-img/lupa.gif') }}" style="width:50px; position: absolute;
+	                left: 270px">
+                  <h4><a>Vagas de Emprego</a></h4>
+                  <p>Clique para acessar</p>
                 </div>
               </div>
             </div>End Portfolio Item --> -
 
-          </div><!-- End Portfolio Container -->
+          
+            </section><!-- End Portfolio Section -->
+            
 
-        </div>
 
-      </div>
-    </section><!-- End Portfolio Section -->
+            
