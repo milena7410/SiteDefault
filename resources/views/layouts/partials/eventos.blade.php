@@ -26,8 +26,7 @@
 
               <div class="portfolio-wrap">
                 <div class="portfolio-info">
-                <img src="/var/www/html/SiteDefault/public/frontend/assets/img/new-img/lupa.gif" 
-                style="width:50px; position: absolute;
+                <img src="{{ asset ('frontend/assets/img/new-img/lupa.gif') }}" style="width:50px; position: absolute;
 	                left: 270px">
                   <h4><a>Portal Transparencia</a></h4>
                   <p>Clique para acessar</p>
@@ -104,7 +103,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-4 col-md-6 portfolio-item filter-books">
+            <!-- <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
                 <a href="{{ asset('frontend/assets/img/portfolio/books-2.jpg')  }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('frontend/assets/img/portfolio/books-2.jpg') }}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
@@ -112,7 +111,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
@@ -122,7 +121,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
@@ -132,9 +131,9 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!End Portfolio Item -->
 
-            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
+            <!-- <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
               <div class="portfolio-wrap">
                 <a href="{{ asset('frontend/assets/img/portfolio/branding-3.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('frontend/assets/img/portfolio/branding-3.jpg') }}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
@@ -142,9 +141,9 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!- End Portfolio Item -->
 
-            <div class="col-xl-4 col-md-6 portfolio-item filter-books">
+            <!-- <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
                 <a href="{{ asset('frontend/assets/img/portfolio/books-3.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('frontend/assets/img/portfolio/books-3.jpg') }}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
@@ -152,7 +151,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>End Portfolio Item --> -
 
           </div><!-- End Portfolio Container -->
 

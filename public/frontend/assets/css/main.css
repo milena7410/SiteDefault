@@ -1035,7 +1035,7 @@ section {
 }
 
 .services .service-item:hover .icon:before {
-  background: #00b6a1;
+  background: var(--color-secondary);
 }
 
 .services .service-item:hover h3 {
@@ -1332,7 +1332,7 @@ section {
 }
 
 .portfolio-details .portfolio-info .btn-visit:hover {
-  background: #009d8b;
+  background: var(--color-secondary);
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -1750,7 +1750,7 @@ section {
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-container {
-  background-color: var(--color-primary);
+  background-color: white;
   height: 100%;
   padding: 20px;
   border-radius: 10px 0 0 10px;
@@ -1759,7 +1759,7 @@ section {
 
 .contact .info-item {
   width: 100%;
-  background-color: #009282;
+  background-color: var(--color-primary);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -1891,7 +1891,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(0, 131, 116, 0.8);
+  background: var(--color-secondary);
 }
 
 @-webkit-keyframes animate-loading {
@@ -2013,7 +2013,7 @@ section {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: var(--color-secondary);
+  background: var(--color-primary);
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -2045,7 +2045,7 @@ section {
 }
 
 .hero .icon-box:hover {
-  background: #009786;
+  background: var(--color-secondary);
 }
 
 .hero .icon-box:hover .title a,
