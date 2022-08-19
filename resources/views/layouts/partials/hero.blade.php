@@ -3,7 +3,7 @@
     <div class="container position-relative">
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-          <h2>Prefeitura Municipal <span>Fulano</span></h2>
+          <h3>Prefeitura Municipal <span>Fulano</span></h3>
           <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
           
           <div class="d-flex justify-content-center justify-content-lg-start">
