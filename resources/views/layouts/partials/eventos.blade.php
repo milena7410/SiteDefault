@@ -40,7 +40,7 @@
               <div class="portfolio-wrap">
 
                  <div class="portfolio-info">
-                <img src="public/frontend/assets/img/new-img/nf.gif" style="width:50px; position: absolute;
+                <img src="{{ asset('frontend/assets/img/new-img/nf.gif') }}" style="width:50px; position: absolute;
 	                left: 270px">
                   <h4><a>Nota Fiscal Eletronica</a></h4>
                   <p>Clique para acessar</p>
@@ -85,7 +85,7 @@
             <div class="col-xl-4 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
               <div class="portfolio-info">
-                <img src="/var/www/html/SiteDefault/public/frontend/assets/img/new-img/lupa.gif" style="width:50px; position: absolute;
+                <img src="{{ asset('frontend//assets/img/new-img/lupa.gif') }}" style="width:50px; position: absolute;
 	                left: 270px">
                   <h4><a>Holerite On-Line</a></h4>
                   <p>Clique para acessar</p>
@@ -96,7 +96,7 @@
             <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
               <div class="portfolio-wrap">
               <div class="portfolio-info">
-                <img src="/var/www/html/SiteDefault/public/frontend/assets/img/new-img/lupa.gif" style="width:50px; position: absolute;
+                <img src="{{ asset('frontend/assets/img/new-img/lupa.gif') }}" style="width:50px; position: absolute;
 	                left: 270px">
                   <h4><a>Vagas de Emprego</a></h4>
                   <p>Clique para acessar</p>
@@ -106,7 +106,7 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt=""></a>
+                <a href="{{ asset('frontend/assets/img/portfolio/books-2.jpg')  }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('frontend/assets/img/portfolio/books-2.jpg') }}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Books 2</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -116,7 +116,7 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt=""></a>
+                <a href="{{ asset('frontend/assets/img/portfolio/app-3.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('frontend/assets/img/portfolio/app-3.jpg') }}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">App 3</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -126,7 +126,7 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt=""></a>
+                <a href="{{ asset('frontend/assets/img/portfolio/product-3.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('frontend/assets/img/portfolio/product-3.jpg') }}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Product 3</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -136,7 +136,7 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt=""></a>
+                <a href="{{ asset('frontend/assets/img/portfolio/branding-3.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('frontend/assets/img/portfolio/branding-3.jpg') }}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Branding 3</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -146,7 +146,7 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt=""></a>
+                <a href="{{ asset('frontend/assets/img/portfolio/books-3.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('frontend/assets/img/portfolio/books-3.jpg') }}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Books 3</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
