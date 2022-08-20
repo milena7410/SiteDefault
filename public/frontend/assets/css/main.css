@@ -1944,6 +1944,7 @@ section {
   color: #fff;
 }
 
+
 .hero p {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
@@ -2031,7 +2032,7 @@ section {
 }
 
 .hero .icon-box .title {
-  font-weight: 700;
+  font-weight: 590px;
   margin-bottom: 15px;
   font-size: 24px;
 }
