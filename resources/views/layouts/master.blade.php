@@ -41,10 +41,6 @@
 @include('layouts.partials.perguntas')
 @include('layouts.partials.noticias')
 @include('layouts.partials.contato')
-
-
-
-
 @include('layouts.partials.footer')
 @yield('content')
 
