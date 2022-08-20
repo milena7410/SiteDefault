@@ -5,7 +5,7 @@
         <div class="row gy-4 align-items-center">
 
           <div class="col-lg-6">
-            <img src="assets/img/stats-img.svg" alt="" class="img-fluid">
+            <img src="{{asset('frontend/assets/img/stats-img.svg')}}" alt="" class="img-fluid">
           </div>
 
           <div class="col-lg-6">
