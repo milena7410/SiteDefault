@@ -443,7 +443,7 @@ section {
     font-size: 15px;
     text-transform: none;
     font-weight: 600;
-    color: #006a5d;
+    color: var(--color-primary);
   }
 
   .navbar .dropdown ul a i {
@@ -514,7 +514,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 131, 116, 0.9);
+    background: var(--color-primary);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -560,7 +560,7 @@ section {
   .navbar .getstarted:hover,
   .navbar .getstarted:focus:hover {
     color: #fff;
-    background: rgba(0, 131, 116, 0.8);
+    background: var(--color-primary);
   }
 
   .navbar .dropdown ul,
@@ -570,8 +570,8 @@ section {
     padding: 10px 0;
     margin: 10px 20px;
     transition: all 0.5s ease-in-out;
-    background-color: #007466;
-    border: 1px solid #006459;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
   }
 
   .navbar .dropdown>.dropdown-active,
@@ -613,7 +613,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 106, 93, 0.8);
+    background: var(--color-secondary);
     z-index: 9996;
   }
 }
@@ -701,7 +701,7 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(0, 131, 116, 0.7);
+  border:var(--color-secondary);
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
@@ -869,7 +869,7 @@ section {
   width: 94px;
   height: 94px;
   margin-bottom: 20px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
+  background: radial-gradient(var(--color-primary) 50%, var(--color-primary) 52%);
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -893,7 +893,7 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(0, 131, 116, 0.7);
+  border: 5px solid --var(--color-primary);
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
