@@ -14,7 +14,7 @@
       <li><a href="#services">Serviços</a></li>
       <li><a href="#portfolio">Portal transparência</a></li>
       <li><a href="#team">COVID-19</a></li>
-      <li><a href="blog.html">Noícias</a></li>
+      <li><a href="blog.html">Notícias</a></li>
       <li class="dropdown"><a href="#"><span>Ouvidoria</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
         <ul>
           <li><a href="#">SAC</a></li>
