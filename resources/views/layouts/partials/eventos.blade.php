@@ -59,7 +59,7 @@
                   <p>Clique para acessar</p>
                 </div>
               </div>
-            </div>><!-- End Portfolio Item -->
+            </div><!-- End Portfolio Item -->
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
@@ -163,7 +163,7 @@
                   <p>Clique para acessar</p>
                 </div>
               </div>
-            </div>End Portfolio Item --> -
+            </div>End Portfolio Item --> 
 
           
             </section><!-- End Portfolio Section -->
