@@ -3,9 +3,9 @@
     <!-- Uncomment the line below if you also wish to use an image logo -->
 
 
-    <!-- <img src="/var/www/html/SiteDefault/public/backend/logo_digitar.png"> -->
+    <img src="{{asset ('backend/logo_digitar.png')}}">
 
-    <h1>Digit@r<span>.</span></h1>
+    <!-- <h1>Digit@r<span>.</span></h1> -->
   </a>
   <nav id="navbar" class="navbar">
     <ul>
@@ -14,7 +14,7 @@
       <li><a href="#services">Secretarias</a></li>
       <li><a href="#portfolio">Acesso Rápidos</a></li>
       <li><a href="#team">Redes Sociais</a></li>
-      <li><a href="blog.html">Notícias</a></li>
+      <li><a href="#recent-posts">Notícias</a></li>
       <li class="dropdown"><a href="#"><span>Ouvidoria</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
         <ul>
           <li><a href="#">SAC</a></li>

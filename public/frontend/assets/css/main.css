@@ -319,8 +319,9 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
-  margin-right: 6px;
+  max-height: 50px;
+  margin-left: 100px;
+  text-align: center;
 }
 
 .header .logo h1 {
@@ -2682,7 +2683,7 @@ section {
 
 .footer .footer-links ul i {
   padding-right: 2px;
-  color: rgba(0, 131, 116, 0.8);
+  color: var(--color-primary);
   font-size: 12px;
   line-height: 0;
 }
