@@ -10,10 +10,10 @@
   <nav id="navbar" class="navbar">
     <ul>
       <li><a href="#hero">Início</a></li>
-      <li><a href="#about">Secretarias e Governo</a></li>
-      <li><a href="#services">Serviços</a></li>
-      <li><a href="#portfolio">Portal transparência</a></li>
-      <li><a href="#team">COVID-19</a></li>
+      <li><a href="#about">Municipio</a></li>
+      <li><a href="#services">Secretarias</a></li>
+      <li><a href="#portfolio">Acesso Rápidos</a></li>
+      <li><a href="#team">Redes Sociais</a></li>
       <li><a href="blog.html">Notícias</a></li>
       <li class="dropdown"><a href="#"><span>Ouvidoria</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
         <ul>

@@ -4,7 +4,7 @@
 
         <div class="section-header">
           <h2>Sobre</h2>
-          <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
+          <p>História da cidade de ....</p>
         </div>
 
         <div class="row gy-4">
