@@ -30,10 +30,10 @@
                 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
               </p>
 
-              <div class="position-relative mt-4">
+              <!-- <div class="position-relative mt-4">
                 <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
