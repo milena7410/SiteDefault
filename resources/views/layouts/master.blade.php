@@ -32,7 +32,7 @@
 <!-- add -->
 @include('layouts.partials.hero')
 @include('layouts.partials.about-us')
-<!--@include('layouts.partials.clients')-->
+@include('layouts.partials.clients')
 @include('layouts.partials.modulos')
 @include('layouts.partials.vacinometro')
 @include('layouts.partials.video')
