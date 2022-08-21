@@ -9,7 +9,7 @@
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
 
-          <!-- <div>
+          <div>
             <ul class="portfolio-flters">
               <li data-filter="*" class="filter-active">Todos</li>
               <li data-filter=".filter-app">Semanal</li>
@@ -18,7 +18,7 @@
               <li data-filter=".filter-books">teste</li>
             </ul>
             <-- End Portfolio Filters -->
-          <!-- </div> --> 
+          </div> 
 
           <div class="row gy-4 portfolio-container">
 
@@ -35,7 +35,7 @@
                 </div>
               </div>
             </div>
-            <!-- End Portfolio Item -->
+            End Portfolio Item
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
@@ -48,7 +48,7 @@
                 </div>
               </div>
             </div>
-            <!-- End Portfolio Item -->
+            End Portfolio Item
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
@@ -61,7 +61,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-4 col-md-6 portfolio-item filter-books">
+             <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
               <div class="portfolio-info">
                 <img src="{{ asset('frontend/assets/img/new-img/ged.png') }}" style="width:50px; position: absolute;
@@ -70,7 +70,8 @@
                   <p>Clique para acessar</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <-- End Portfolio Item -->
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
