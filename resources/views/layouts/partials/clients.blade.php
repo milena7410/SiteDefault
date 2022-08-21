@@ -6,7 +6,7 @@
         <div class="clients-slider swiper">
           
 
-        <html>
+        <!-- <html>
   <head>
     <title>Simple Map</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
@@ -15,7 +15,7 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <div id="map"></div>
+    <div id="map"></div> -->
 
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
@@ -23,12 +23,12 @@
      and consistent behavior across browsers, consider loading using Promises
      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
     -->
-    <script
+    <!-- <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
       defer
     ></script>
   </body>
-</html>
+</html> -->
           <!-- <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-1.png')}}" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-2.png')}}" class="img-fluid" alt=""></div>
