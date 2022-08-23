@@ -12,6 +12,6 @@ class LoginController extends Controller
     }
 
     public function painel(Request $request){
-        dd($request->all());
+       return view('backend.admin.master');
     }
 }
