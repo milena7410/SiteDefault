@@ -47,6 +47,16 @@
 
 <div id="preloader"></div>
 
+<!--Libras acess-->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+<!--Libras acess end-->
+
 <!-- Vendor JS Files -->
 <script src="{{ asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('frontend/assets/vendor/aos/aos.js') }}"></script>
@@ -58,6 +68,9 @@
 
 <!-- Template Main JS File -->
 <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
-
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 </body>
 
