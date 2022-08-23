@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/admin', [LoginController::class, 'index'])->name('login');
+Route::get('/admin/painel', [LoginController::class, 'painel'])->name('painel');

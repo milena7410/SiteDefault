@@ -8,6 +8,10 @@ class LoginController extends Controller
 {
     public function index(Request $request)
     {
-        return view('frontend.pages.login.login');
+        return view('backend.login.login');
+    }
+
+    public function painel(Request $request){
+        dd($request->all());
     }
 }
