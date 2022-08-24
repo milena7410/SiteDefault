@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PublicacoesController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,3 +21,12 @@ Route::get('/', function () {
 
 Route::get('/admin', [LoginController::class, 'index'])->name('login');
 Route::get('/admin/painel', [LoginController::class, 'painel'])->name('painel');
+
+
+// teste milena
+// Route::get('/', function () {
+//     return view('frontend.index');
+// });
+
+Route::get('/publicacoes', [PublicacoesController::class, 'publicacoes'])->name('publicacoes');
+
