@@ -7,6 +7,6 @@ class PublicacoesController extends Controller
 {
     public function publicacoes(Request $request)
     {
-        return view('layouts.publicacoes.publicacoes');
+        return view('layouts.publicacoes.partials.publicacoes');
     }
 }
