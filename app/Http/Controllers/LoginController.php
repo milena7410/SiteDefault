@@ -18,7 +18,6 @@ class LoginController extends Controller
 
     public function verifyLogin(Request $request)
     {
-
         if (Auth::attempt($request->all())) {
             $resultado['success'] = true;
             return response()->json($resultado);
