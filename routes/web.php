@@ -15,18 +15,14 @@ use App\Http\Controllers\PublicacoesController;
 |
 */
 
+// rotas
 Route::get('/', function () {
     return view('frontend.index');
 });
 
 Route::get('/admin', [LoginController::class, 'index'])->name('login');
-Route::get('/admin/painel', [LoginController::class, 'painel'])->name('painel');
+Route::get('/admin/check-login/user', [LoginController::class, 'verifyLogin'])->name('admin.check.login');
 
-
-// teste milena
-// Route::get('/', function () {
-//     return view('frontend.index');
-// });
-
-Route::get('/publicacoes', [PublicacoesController::class, 'publicacoes'])->name('publicacoes');
-
+Route::middleware(['admin'])->group(function () {
+    Route::get('/dashboard', [LoginController::class, 'painel'])->name('admin.dashboard');
+});
