@@ -37,7 +37,7 @@
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><img src="{{ asset('frontend/assets/img/new-img/pdf.png') }}" ></div>
-              <h4 class="title"><a href="" class="stretched-link">Últimas Publicações</a></h4>
+              <h4 class="title"><a href="publicacoes" target="_blank" class="stretched-link">Últimas Publicações</a></h4>
             </div>
           </div>
           <!--End Icon Box -->
