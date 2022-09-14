@@ -2,8 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\PublicacoesController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +13,6 @@ use App\Http\Controllers\PublicacoesController;
 |
 */
 
-// rotas
 Route::get('/', function () {
     return view('frontend.index');
 });
@@ -24,5 +21,5 @@ Route::get('/admin', [LoginController::class, 'index'])->name('login');
 Route::get('/admin/check-login/user', [LoginController::class, 'verifyLogin'])->name('admin.check.login');
 
 Route::middleware(['admin'])->group(function () {
-    Route::get('/dashboard', [LoginController::class, 'painel'])->name('admin.dashboard');
+    Route::get('/dashboard', [LoginController::class, 'dashboard'])->name('admin.dashboard');
 });

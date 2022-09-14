@@ -18,7 +18,8 @@ class LoginController extends Controller
 
     public function verifyLogin(Request $request)
     {
-    
+        dd($request->all());
+        die();
         $attributes = $request->validate([
             'email' => 'required|email|exists:users,email',
             'password' => 'required|max:255',
