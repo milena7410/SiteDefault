@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
 <!-- Custom fonts for this template-->
 <link href="{{ asset('frontend/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
@@ -26,7 +26,7 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                 </div>
-                                <form class="user" action="{{ route('admin.check.login') }}" method="GET">
+                                <form class="user" id="formLogin">
                                     <div class="form-group">
                                         <input name="email" type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
                                     </div>
@@ -79,3 +79,32 @@
 
 <!-- Custom scripts for all pages-->
 <script src="{{ asset('frontend/js/sb-admin-2.min.js') }}"></script>
+
+<!-- js ajax Login -->
+{{-- <script src="{{ asset('backend/js/login.js') }}"></script> --}}
+
+<script>
+$('#formLogin').submit(function(e) {
+    e.preventDefault();
+
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    $.ajax({
+        url: '/admin/check-login/user',
+        data: $(this).serializeArray(),
+        dataType: 'json',
+        method: 'POST',
+        success: function(result) {
+            console.log(result)
+        },
+        error: function(error) {
+            console.log(error)
+        }
+    })
+});
+</script>

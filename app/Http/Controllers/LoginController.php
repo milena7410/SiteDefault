@@ -18,14 +18,8 @@ class LoginController extends Controller
 
     public function verifyLogin(Request $request)
     {
-        dd($request->all());
-        die();
-        $attributes = $request->validate([
-            'email' => 'required|email|exists:users,email',
-            'password' => 'required|max:255',
-        ]);
 
-        if (Auth::attempt($attributes)) {
+        if (Auth::attempt($request->all())) {
             $resultado['success'] = true;
             return response()->json($resultado);
         }
