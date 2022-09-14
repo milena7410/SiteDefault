@@ -18,4 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/admin', [LoginController::class, 'index'])->name('login');
-Route::get('/admin/painel', [LoginController::class, 'painel'])->name('painel');
+Route::get('/admin/check-login/user', [LoginController::class, 'verifyLogin'])->name('admin.check.login');
+
+Route::middleware(['admin'])->group(function () {
+    Route::get('/dashboard', [LoginController::class, 'painel'])->name('admin.dashboard');
+});

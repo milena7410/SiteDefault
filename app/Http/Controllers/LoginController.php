@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
 
 class LoginController extends Controller
 {
@@ -11,7 +12,24 @@ class LoginController extends Controller
         return view('backend.login.login');
     }
 
-    public function painel(Request $request){
+    public function dashboard(Request $request){
        return view('backend.admin.master');
+    }
+
+    public function verifyLogin(Request $request)
+    {
+    
+        $attributes = $request->validate([
+            'email' => 'required|email|exists:users,email',
+            'password' => 'required|max:255',
+        ]);
+
+        if (Auth::attempt($attributes)) {
+            $resultado['success'] = true;
+            return response()->json($resultado);
+        }
+
+        $resultado['success'] = false;
+        return response()->json($resultado);
     }
 }
