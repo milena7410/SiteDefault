@@ -1,7 +1,6 @@
 $('#formLogin').submit(function(e) {
     e.preventDefault();
 
-
     $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -9,16 +8,22 @@ $('#formLogin').submit(function(e) {
     });
 
     $.ajax({
-        url: $(this).data('/admin/check-login/user'),
+        url: '/admin/check-login/user',
         data: $(this).serializeArray(),
         dataType: 'json',
         method: 'POST',
-        encode: true,
         success: function(result) {
-            console.log(result)
-        },
-        error: function(error) {
-            console.log(error)
+            if (result.success === true) {
+                window.location.href = '/admin/dashboard'
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Login ou senha invalidos!',
+                    footer: '<a href="">Fale com o suporte?</a>'
+                })
+            }
         }
+
     })
 });

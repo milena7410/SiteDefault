@@ -9,11 +9,16 @@ class LoginController extends Controller
 {
     public function index(Request $request)
     {
-        return view('backend.login.login');
+        return view('backend.login');
     }
 
     public function dashboard(Request $request){
        return view('backend.admin.master');
+    }
+
+    public function logout(){
+        Auth::logout();
+        return view('backend.login');
     }
 
     public function verifyLogin(Request $request)
@@ -23,7 +28,8 @@ class LoginController extends Controller
             return response()->json($resultado);
         }
 
-        $resultado['success'] = false;
+        $resultado['error'] = false;
         return response()->json($resultado);
+
     }
 }

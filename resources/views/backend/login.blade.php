@@ -6,6 +6,7 @@
 <!-- Custom fonts for this template-->
 <link href="{{ asset('frontend/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.0/dist/sweetalert2.min.css" rel="stylesheet" type="text/css">
 
 <!-- Custom styles for this template-->
 <link href="{{ asset('frontend/css/sb-admin-2.min.css') }}" rel="stylesheet">
@@ -28,35 +29,34 @@
                                 </div>
                                 <form class="user" id="formLogin">
                                     <div class="form-group">
-                                        <input name="email" type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                                        <input name="email" type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Endereço de email...">
                                     </div>
                                     <div class="form-group">
-                                        <input  name="password"  type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                        <input  name="password"  type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Senha">
                                     </div>
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox small">
                                             <input type="checkbox" class="custom-control-input" id="customCheck">
-                                            <label class="custom-control-label" for="customCheck">Remember
-                                                Me</label>
+                                            <label class="custom-control-label" for="customCheck">Lembrar senha</label>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-user btn-block">
-                                        Login
+                                        Acessar
                                     </button>
                                     <hr>
                                     <a href="index.html" class="btn btn-google btn-user btn-block">
-                                        <i class="fab fa-google fa-fw"></i> Login with Google
+                                        <i class="fab fa-google fa-fw"></i> Faça login com o Google
                                     </a>
                                     <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                        <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
+                                        <i class="fab fa-facebook-f fa-fw"></i> Faça login com o Facebook
                                     </a>
                                 </form>
                                 <hr>
                                 <div class="text-center">
-                                    <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                    <a class="small" href="forgot-password.html">Esqueceu sua senha?</a>
                                 </div>
                                 <div class="text-center">
-                                    <a class="small" href="register.html">Create an Account!</a>
+                                    <a class="small" href="register.html"></a>
                                 </div>
                             </div>
                         </div>
@@ -81,30 +81,6 @@
 <script src="{{ asset('frontend/js/sb-admin-2.min.js') }}"></script>
 
 <!-- js ajax Login -->
-{{-- <script src="{{ asset('backend/js/login.js') }}"></script> --}}
+<script src="{{ asset('backend/js/login.js') }}"></script>
 
-<script>
-$('#formLogin').submit(function(e) {
-    e.preventDefault();
-
-
-    $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
-    });
-
-    $.ajax({
-        url: '/admin/check-login/user',
-        data: $(this).serializeArray(),
-        dataType: 'json',
-        method: 'POST',
-        success: function(result) {
-            console.log(result)
-        },
-        error: function(error) {
-            console.log(error)
-        }
-    })
-});
-</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.0/dist/sweetalert2.min.js"></script>

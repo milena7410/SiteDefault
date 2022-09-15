@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::get('/admin', [LoginController::class, 'index'])->name('login');
 Route::post('/admin/check-login/user', [LoginController::class, 'verifyLogin', ])->name('admin.check.login');
 
-Route::middleware(['admin'])->group(function () {
-    Route::get('/dashboard', [LoginController::class, 'dashboard'])->name('admin.dashboard');
+Route::prefix('admin')->group(function () {
+        Route::get('/dashboard', [LoginController::class, 'dashboard'])->name('admin.dashboard')->middleware('auth');
+        Route::get('/logout', [LoginController::class, 'logout'])->name('admin.logout')->middleware('auth');
 });
