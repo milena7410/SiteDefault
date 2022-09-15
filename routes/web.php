@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,14 +13,15 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
+//ROUTE HOME
+Route::get('/', [AuthController::class, 'home'])->name('home');
 
-Route::get('/admin', [LoginController::class, 'index'])->name('login');
-Route::post('/admin/check-login/user', [LoginController::class, 'verifyLogin', ])->name('admin.check.login');
+//ROUTE CHECK LOGIN
+Route::get('/admin', [AuthController::class, 'index'])->name('login');
+Route::post('/admin/check-login/user', [AuthController::class, 'verifyLogin', ])->name('admin.check.login');
 
+//ROUTE MIDDLEWARE
 Route::prefix('admin')->group(function () {
-        Route::get('/dashboard', [LoginController::class, 'dashboard'])->name('admin.dashboard')->middleware('auth');
-        Route::get('/logout', [LoginController::class, 'logout'])->name('admin.logout')->middleware('auth');
+        Route::get('/dashboard', [AuthController::class, 'dashboard'])->name('admin.dashboard')->middleware('auth');
+        Route::get('/logout', [AuthController::class, 'logout'])->name('admin.logout')->middleware('auth');
 });
