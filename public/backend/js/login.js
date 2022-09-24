@@ -1,4 +1,4 @@
-$('#formLogin').submit(function(e) {
+$('#formLogin').submit(function (e) {
     e.preventDefault();
 
     $.ajaxSetup({
@@ -12,15 +12,29 @@ $('#formLogin').submit(function(e) {
         data: $(this).serializeArray(),
         dataType: 'json',
         method: 'POST',
-        success: function(result) {
+        success: function (result) {
+
             if (result.success === true) {
-                window.location.href = '/admin/dashboard'
+                // teste
+
+                Swal.fire({
+                    title: 'Logado',
+                    showConfirmButton: false,
+                    text: 'Bem-vindo ao dashboard',
+                    icon: 'success',
+                    toast: true,
+                })
+                setTimeout(function () {
+                    window.location.href = '/admin/dashboard'
+                }, 1500);
+
+
             } else {
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Login ou senha invalidos!',
-                    footer: '<a href="">Fale com o suporte?</a>'
+                    footer: '<a href="">Entre em contato com o suporte?</a>'
                 })
             }
         }

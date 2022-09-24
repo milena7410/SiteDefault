@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UsersController;
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,4 +28,10 @@ Route::post('/admin/check-login/user', [AuthController::class, 'verifyLogin', ])
 Route::prefix('admin')->group(function () {
         Route::get('/dashboard', [AuthController::class, 'dashboard'])->name('admin.dashboard')->middleware('auth');
         Route::get('/logout', [AuthController::class, 'logout'])->name('admin.logout')->middleware('auth');
+        Route::get('/users/show', [UsersController::class, 'index'])->name('users.show')->middleware('auth');
+        Route::get('/users/edit', [UsersController::class, 'edit'])->name('users.edit')->middleware('auth');
+
+
+
 });
+
