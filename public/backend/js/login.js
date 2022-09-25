@@ -23,6 +23,7 @@ $('#formLogin').submit(function (e) {
                     text: 'Bem-vindo ao dashboard',
                     icon: 'success',
                     toast: true,
+                    position: 'top-end',
                 })
                 setTimeout(function () {
                     window.location.href = '/admin/dashboard'

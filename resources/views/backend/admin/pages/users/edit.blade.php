@@ -1,37 +1,34 @@
 @extends('backend.admin.pages.master')
 
 @section('page')
+<div class=edit style="padding:30px; display: flex;
+  justify-content: space-between;">
+    <h2>Vereadores<h2>
+            <img src="{{ asset('frontend/img/editar.png') }}" width="35px" height="35px">
+</div>
+
 <div class="card-body">
     <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Office</th>
-                    <th>Age</th>
-                    <th>Start date</th>
-                    <th>Salary</th>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Idade</th>
+                    <th>Efetivação</th>
+                    <th>Salário</th>
                 </tr>
             </thead>
             <tfoot>
-                <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Office</th>
-                    <th>Age</th>
-                    <th>Start date</th>
-                    <th>Salary</th>
-                </tr>
+
             </tfoot>
             <tbody>
                 <tr>
-                    <td>Tiger Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-                    <td>61</td>
-                    <td>2011/04/25</td>
-                    <td>$320,800</td>
+                    <td>Milena Alegre</td>
+                    <td>Desenvolvedora Front-End</td>
+                    <td>21</td>
+                    <td>00/00/0000</td>
+                    <td>R$100.000</td>
                 </tr>
 
             </tbody>
@@ -39,4 +36,4 @@
     </div>
 </div>
 
-@endsection 
+@endsection
